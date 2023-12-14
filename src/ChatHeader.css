@@ -1,0 +1,19 @@
+body,
+html {
+  margin: 0;
+  background: linear-gradient(#000000, #7f7f81, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.1rem;
+}
+
+
+.msg_head {
+  background-color: rgb(0, 0, 0)5;
+}
+
+
+
+

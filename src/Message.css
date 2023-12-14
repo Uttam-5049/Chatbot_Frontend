@@ -1,0 +1,43 @@
+.type_msg:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.user_img /*the chatbot main image above*/ {
+  height: 70px;
+  width: 70px;
+  border: 1.5px solid #f5f6fa;
+}
+
+.user_img_msg {
+  height: 20px;
+  width: 20px;
+  border: 1.5px solid #f5f6fa;
+}
+
+.img_cont {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.img_cont_msg {
+  height: 40px;
+  width: 40px;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-body {
+  overflow: auto;
+}
+.card-body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
