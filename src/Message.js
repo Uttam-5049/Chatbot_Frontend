@@ -4,8 +4,10 @@ import InputField from "./InputField";
 import ChatMessage from "./ChatMessage";
 import SocketIO from "socket.io-client";
 
-const socket = SocketIO.io("https://mercedeschatbot.onrender.com");
-
+//const socket = SocketIO.io("https://mercedeschatbot.onrender.com");
+//const socket = SocketIO.io("http://mercedeschatbe.azurewebsites.net");
+const socket = SocketIO.io("https://mercedeschatbe.azurewebsites.net");
+//const socket = SocketIO.io("http://localhost:8000");
 const Message = () => {
   const [messages, setMessages] = useState([{text: "Hello! I'm your Mercedes assistant here to assist you in finding the perfect Mercedes car for your needs. Whether you're exploring models, checking availability, or seeking detailed information, feel free to say Hi to get started!"
     , isSent:false,userImage:"https://imgs.search.brave.com/IJvzVUU4gVyCA6ua0LXC3HFpHURoykICDagzRDALySI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdmLzJh/LzgxLzdmMmE4MTdl/YTBkMzBhZTQ3Mjc1/ZDc2NDc2NDkyOTk0/LmpwZw"},
