@@ -1,14 +1,14 @@
 
 import React, { useEffect, useState } from 'react';
 import ChatHeader from './ChatHeader';
-import ChatMessage from './ChatMessage';
-import InputField from './InputField';
+//import ChatMessage from './ChatMessage';
+//import InputField from './InputField';
 import Message from './Message';
 
 import './App.css'; // Import the CSS file
 
 const App = () => {
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [,setWindowHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     const handleResize = () => {
