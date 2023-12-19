@@ -3,7 +3,7 @@
   outline: 0px !important;
 }
 
-.user_img /*the chatbot main image above*/ {
+.user_img {
   height: 70px;
   width: 70px;
   border: 1.5px solid #f5f6fa;
@@ -15,10 +15,15 @@
   border: 1.5px solid #f5f6fa;
 }
 
-.img_cont {
+.img_logo {
   position: relative;
   height: 100px;
   width: 100px;
+}
+
+.brand_title {
+  color: white;
+  font-size: 35px; /* Add 'px' for font-size */
 }
 
 .img_cont_msg {
@@ -34,10 +39,37 @@
 }
 
 .card-body {
+  padding: 1.25rem;
   overflow: auto;
 }
-.card-body::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;  
-  scrollbar-width: none; 
+
+/* (mobile devices) */
+@media only screen and (max-width: 600px) {
+  .user_img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .user_img_msg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .img_logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .brand_title {
+    font-size: 25px; /* Adjust font size for smaller screens */
+  }
+
+  .img_cont_msg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .card-body {
+    padding: 0.25rem;
+  }
 }
