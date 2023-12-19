@@ -4,7 +4,7 @@ import InputField from "./InputField";
 import ChatMessage from "./ChatMessage";
 import SocketIO from "socket.io-client";
 
-const socket = SocketIO.io("http://localhost:8000");
+const socket = SocketIO.io("https://mercedeschatbot.onrender.com");
 
 const Message = () => {
   const [messages, setMessages] = useState([{text: "Hello! I'm your Mercedes assistant here to assist you in finding the perfect Mercedes car for your needs. Whether you're exploring models, checking availability, or seeking detailed information, feel free to say Hi to get started!"
