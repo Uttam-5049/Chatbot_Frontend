@@ -31,15 +31,9 @@
   opacity: 0;
 }
 
-.messages .message.left .avatar {
-  background-color: transparent;
-  float: left;
-
-}
-
 .messages .message.left .text_wrapper {
-  background-color: #000000;
-  margin-left: 15px;
+  background-color: #848484;
+  margin-left: 20px;
 }
 
 .messages .message.left .text_wrapper::after,
@@ -47,25 +41,30 @@
  {
   right: 100%;
   margin-top: -15px;
-  border-right-color: #000000;
+  border-right-color: #848484;
 }
 
 .messages .message.left .text {
-  color: #ffffff;
+  color: #000000;
 }
 
 .messages .message.right .avatar {
   background-color: transparent;
   float: right;
-  border-radius: 15px;
   border-width: 10px;
   border-color: #c7eafc;
-  margin-left: 25px;
+  margin-left: 20px;
+}
 
+.messages .message.left .avatar {
+  background-color: transparent;
+  float: left;
+  margin-right: 20px;
+  border-radius: 15px;
 }
 
 .messages .message.right .text_wrapper {
-  background-color: #848484;
+  background-color: #000000; 
   margin-right: 20px;
   float: right;
 }
@@ -73,11 +72,11 @@
 .messages .message.right .text_wrapper::after,
 .messages .message.right .text_wrapper::before {
   left: 100%;
-  border-left-color: #848484;
+  border-left-color: #000000;
 }
 
 .messages .message.right .text {
-  color: #000000;
+  color: #ffffff;
 }
 
 .messages .message.appeared {
@@ -89,7 +88,6 @@
   height: 70px;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 50px;
 }
 
 .messages .message .text_wrapper {
@@ -138,4 +136,50 @@
   font-size: 20px;
   font-weight: 300;
   float: left;
+}
+
+/* (mobile devices) */
+@media only screen and (max-width: 600px) {
+  .chat-header,
+  .chat-body,
+  .chat-footer {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+
+  .messages .message .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .messages .message.left .avatar {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+
+  .messages .message.right .avatar {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+
+  .messages .message .text_wrapper {
+    padding: 10px;
+    min-width: auto;
+    width: calc(100% - 100px);
+  }
+
+  .messages .message .text_wrapper::after,
+  .messages .message .text_wrapper::before {
+    top: 20px;
+  }
+
+  .messages .message .text_wrapper .text {
+    font-size: 16px;
+  }
+
+  .messages .message .text_wrapper .time .right,
+  .messages .message .text_wrapper .time .left {
+    font-size: 16px;
+  }
 }

@@ -44,13 +44,13 @@ const ChatMessage = ({ isSenderSide, message, time, userImage }) => {
   const formattedTime = time ? time.split(":").slice(0, 2).join(":") : "";
 
   return (
-    <li className={`message appeared ${isSenderSide ? "left" : "right"}`}>
+    <li className={`message appeared ${isSenderSide ? "right" : "left"}`}>
       <img src={userImage} className="avatar" alt="User Avatar" />
       <div className="text_wrapper">
         <div className="text" ref={messageRef}>
           {message}
         </div>
-        <span className={`time ${isSenderSide ? "left" : "right"}`}>
+        <span className={`time ${isSenderSide ? "right" : "left"}`}>
           {formattedTime}
         </span>
       </div>
