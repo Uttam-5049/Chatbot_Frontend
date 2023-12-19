@@ -4,7 +4,7 @@ import InputField from "./InputField";
 import ChatMessage from "./ChatMessage";
 import SocketIO from "socket.io-client";
 
-const socket = SocketIO.io("https://mercedeschatbe.azurewebsites.net");
+const socket = SocketIO.io("https://chatbotmercedesbe.azurewebsites.net");
 //const socket = SocketIO.io("http://localhost:8000");
 
 const Message = () => {
